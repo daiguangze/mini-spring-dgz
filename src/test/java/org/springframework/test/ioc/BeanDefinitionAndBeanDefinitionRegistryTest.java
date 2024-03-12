@@ -11,7 +11,7 @@ public class BeanDefinitionAndBeanDefinitionRegistryTest {
         // 初始信息读取
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
         BeanDefinition beanDefinition = new BeanDefinition(HelloService.class);
-        factory.registryBeanDefinition("hello",beanDefinition);
+        factory.registerBeanDefinition("hello",beanDefinition);
 
         // 获取bean
         HelloService service = (HelloService) factory.getBean("hello");
