@@ -4,6 +4,8 @@ public class BeanDefinition {
 
     private Class beanClass;
 
+    private String name;
+
     public BeanDefinition(Class beanClass) {
         this.beanClass = beanClass;
     }
